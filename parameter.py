@@ -19,7 +19,7 @@ def get_parameters():
     parser.add_argument('--version', type=str, default='sagan_1')
 
     # Training setting
-    parser.add_argument('--total_step', type=int, default=1000000, help='how many times to update the generator')
+    parser.add_argument('--total_step', type=int, default=800000, help='how many times to update the generator')
     parser.add_argument('--d_iters', type=float, default=5)
     parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--num_workers', type=int, default=2)
@@ -43,6 +43,7 @@ def get_parameters():
     parser.add_argument('--log_path', type=str, default='./logs')
     parser.add_argument('--model_save_path', type=str, default='./models')
     parser.add_argument('--sample_path', type=str, default='./samples')
+    parser.add_argument('--test_store_path', type=str, default='./generate')
     parser.add_argument('--attn_path', type=str, default='./attn')
 
     # Step size
