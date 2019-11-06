@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import os
 import time
 import torch
@@ -19,9 +16,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import helper
-
-# In[ ]:
-
 
 class Tester(object):
     def __init__(self, data_loader, config):
